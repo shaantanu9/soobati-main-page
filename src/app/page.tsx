@@ -1,113 +1,185 @@
+// // import Head from "next/head";
+// // import Image from "next/image";
+
+// // export default function Home() {
+// //   return (
+// //     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+// //       <Head>
+// //         <title>Coming Soon - Hyperlocal Social Media App</title>
+// //         <meta
+// //           name="description"
+// //           content="Stay tuned for the launch of our hyperlocal social media app!"
+// //         />
+// //         <link rel="icon" href="/favicon.ico" />
+// //       </Head>
+
+// //       <main className="flex flex-col items-center justify-center flex-1 px-20 text-center">
+// //         <h1 className="text-6xl font-bold rounded-2xl p-3 bg-[#0163EC]">
+// //           Coming Soon
+// //         </h1>
+
+// //         <p className="mt-3 text-2xl text-black ">
+// //           Our hyperlocal social media app is launching soon. Stay tuned!
+// //         </p>
+
+// //         <p className="mt-3 text-lg text-gray-600">
+// //           Connect with your community like never before.
+// //         </p>
+
+// //         <form className="mt-6 flex flex-col items-center">
+// //           <input
+// //             type="email"
+// //             placeholder="Enter your email to stay updated"
+// //             className="px-4 py-2 text-lg border rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+// //           />
+// //           <button
+// //             type="submit"
+// //             className="mt-4 px-6 py-3 bg-[#0163EC] text-white text-lg font-medium rounded-md hover:bg-blue-600"
+// //           >
+// //             Notify Me
+// //           </button>
+// //         </form>
+// //       </main>
+
+// //       <footer className="flex items-center justify-center w-full h-24 border-t">
+// //         <p className="text-gray-500">
+// //           &copy; {new Date().getFullYear()} Hyperlocal Social Media App. All
+// //           rights reserved.
+// //         </p>
+// //       </footer>
+// //     </div>
+// //   );
+// // }
+
+// pages/index.tsx
+
+import React from "react";
+import Head from "next/head";
 import Image from "next/image";
+import NotifyMeForm from "./NotifyMeForm";
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <div className="min-h-screen bg-white">
+      <Head>
+        <title>Coming Soon - Hyperlocal Social Media App</title>
+        <meta
+          name="description"
+          content="Stay tuned for the launch of our hyperlocal social media app!"
         />
-      </div>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
+      <header className="flex justify-between items-center p-6 bg-white shadow-md">
+        <div
+          className="text-2xl font-bold
+        text-black 
+        "
         >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
+          Soobati
+        </div>
+        <nav className="space-x-6">
+          {/* <a href="#" className="text-gray-700 hover:text-black">Home</a>
+          <a href="#" className="text-gray-700 hover:text-black">Blog</a>
+          <a href="#" className="text-gray-700 hover:text-black">Pricing</a>
+          <a href="#" className="text-gray-700 hover:text-black">Contact</a>
+          <a href="#" className="text-gray-700 hover:text-black">FAQ</a> */}
+        </nav>
+        <a
+          href="#"
+          className="bg-black text-white px-4 py-2 rounded-lg hover:bg-gray-800"
+        >
+          App Coming Soon
         </a>
+      </header>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
+      <main className="flex flex-col items-center justify-center flex-1 text-center py-20">
+        <h1 className="text-5xl font-bold mb-6 text-black max-w-4xl">
+          Let us help you connect with your neighbours like never before.
+        </h1>
+        <p className="text-lg text-gray-600 mb-6">
+          Soobati is a hyperlocal social media app that helps you connect with
+          your neighbours, share information, and build a strong community.
+        </p>
+      
+      <NotifyMeForm />
+        <div className="mt-10">
+          {/* Add an image or illustration here */}
+          <Image
+            width={1020}
+            height={1080}
+            src="/soobati-main-img.avif"
+            alt="Illustration"
+            //  className="w-full max-w-md mx-auto"
+          />
+        </div>
+      </main>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <footer className="flex items-center justify-center w-full h-24 border-t">
+        <p className="text-gray-500">
+          &copy; {new Date().getFullYear()} Hyperlocal Social Media App. All
+          rights reserved.
+        </p>
+      </footer>
+    </div>
   );
-}
+};
+
+export default Home;
+
+// // pages/index.tsx
+
+// import React from 'react';
+// import Head from 'next/head';
+
+// const Home: React.FC = () => {
+//   return (
+//     <div className="min-h-screen bg-white">
+//       <Head>
+//         <title>Coming Soon - Hyperlocal Social Media App</title>
+//         <meta name="description" content="Stay tuned for the launch of our hyperlocal social media app!" />
+//         <link rel="icon" href="/favicon.ico" />
+//       </Head>
+
+//       <header className="flex justify-between items-center p-6 bg-white shadow-md">
+//         <div className="text-2xl font-bold">MyApp</div>
+//         <nav className="space-x-6">
+//           <a href="#" className="text-gray-700 hover:text-black">Home</a>
+//           <a href="#" className="text-gray-700 hover:text-black">About</a>
+//           <a href="#" className="text-gray-700 hover:text-black">Elements</a>
+//           <div className="relative">
+//             <a href="#" className="text-gray-700 hover:text-black">Pages</a>
+//             <div className="absolute right-0 hidden mt-2 w-48 bg-white border border-gray-200 shadow-lg">
+//               <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Subpage 1</a>
+//               <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Subpage 2</a>
+//             </div>
+//           </div>
+//         </nav>
+//         <a href="#" className="bg-teal-500 text-white px-4 py-2 rounded-lg hover:bg-teal-600">Get Started</a>
+//       </header>
+
+//       <main className="flex flex-col items-center justify-center flex-1 text-center py-20">
+//         <h1 className="text-5xl font-bold mb-6">
+//           The Ultimate Starter Template You Need To Start Your Next Project
+//         </h1>
+//         <p className="text-lg text-gray-600 mb-6">
+//           Our app is a free starter template built with Next and TailwindCSS, providing everything you need to jumpstart your project and save valuable time.
+//         </p>
+//         <a href="#" className="bg-black text-white px-6 py-3 rounded-lg font-medium hover:bg-gray-800">
+//           Get Started For Free
+//         </a>
+//       </main>
+
+//       <div className="flex justify-center mt-10">
+//         {/* Add your image here */}
+//         <img src="https://nextplate.netlify.app/_next/image?url=%2Fimages%2Fbanner.png&w=1920&q=75" alt="Illustration" className="w-full max-w-xl mx-auto" />
+//       </div>
+
+//       <footer className="flex items-center justify-center w-full h-24 border-t mt-10">
+//         <p className="text-gray-500">&copy; {new Date().getFullYear()} MyApp. All rights reserved.</p>
+//       </footer>
+//     </div>
+//   );
+// };
+
+// export default Home;
